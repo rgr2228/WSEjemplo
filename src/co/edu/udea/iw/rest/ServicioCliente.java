@@ -46,7 +46,7 @@ public class ServicioCliente {
 				clientesService.add(clienteWS);
 			}
 		}catch(IWDaoException e){
-			System.out.println("Pasé por acá");
+			e.printStackTrace();
 			throw new RemoteException(e.getMessage());
 		}
 		return clientesService;
